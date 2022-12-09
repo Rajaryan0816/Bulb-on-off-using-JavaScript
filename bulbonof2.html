@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On/Off</title>
+    <script type="text/javascript">
+        function light(show) {
+            // body...
+            var pic;
+            if (show==0) {
+                pic = "bulb.of.jfif";
+            }
+            else{
+                pic = "bulb.on.jfif";
+            }
+            document.getElementById('bulb').src = pic;
+        }
+    </script>
+</head>
+<body>
+    <centre><h1>BULB On/Off</h1>
+    <p>Here, a Jvascript changes the value of the source attribute of an images.</p>
+    </centre>
+
+    <img id="bulb" src="bulb.of.jfif" width="200px" height="200px">
+    <centre><p>
+        <button type="button" onclick="light(1)">Light ON</button>
+        <button type="button" onclick="light(0)">Light OFF</button>
+    </p></centre>
+    
+</body>
+</html>
